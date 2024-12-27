@@ -19,7 +19,7 @@ jobs:
         with:
           fetch-depth: 0
       - run: |
-          mkdir buildout
+          mkdir -p buildout
           CWD=$(pwd)
           cd /tmp
           git clone https://github.com/netbootxyz/netboot.xyz

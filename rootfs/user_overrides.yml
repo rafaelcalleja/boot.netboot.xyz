@@ -1,0 +1,15 @@
+---
+generate_disks_hybrid: true
+
+boot_domain: rafaelcalleja.github.io/boot.netboot.xyz/resources/master
+custom_endpoint: https://huggingface.co/Nowah/distrostore
+
+custom_generate_menus: true
+custom_templates_dir: "/ansible/custom"
+
+early_menu_enabled: false
+early_menu_contents: |
+   ### early menu overrides
+   ### used to set early ipxe options such as custom console & logo
+   # console --x 1024 --y 768
+   # console --picture https://boot.netboot.xyz/logo.png

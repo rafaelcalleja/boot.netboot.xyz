@@ -1,0 +1,56 @@
+name: Generate downloads repository
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: true
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - run: |
+          mkdir buildout
+          CWD=$(pwd)
+          cd /tmp
+          git clone https://github.com/netbootxyz/netboot.xyz
+          cp -R ${CWD}/rootfs/* netboot.xyz
+          cd netboot.xyz
+          docker build -t localbuild .
+          docker run --rm -i -v ${CWD}/buildout:/buildout localbuild
+      - name: Determine branch name
+        run: |
+          BRANCH="${GITHUB_BASE_REF#refs/heads/}"
+          
+          if [ -z "$BRANCH" ]; then
+            BRANCH=${GITHUB_REF##*/}            
+          fi
+          
+          if [ -z "$BRANCH" ]; then
+            BRANCH=${{ github.ref_name }}
+          fi
+          
+          if [ "$BRANCH" == "main" ] || [ -z "$BRANCH" ]; then
+            BRANCH=master            
+          fi
+          
+          echo "Building for $BRANCH"
+          echo "BRANCH=$BRANCH" >> $GITHUB_ENV
+      - name: Deploy created packages to gh-pages
+        run: |
+          git checkout gh-pages 
+          mkdir -p "resources/${{ env.BRANCH }}/targets" -p
+          cp -R buildout/* "resources/${{ env.BRANCH }}/"
+          git config user.name  github-actions
+          git config user.email github-actions@github.com
+          git add -A
+          (git commit -m "bump packages" && git push) || true

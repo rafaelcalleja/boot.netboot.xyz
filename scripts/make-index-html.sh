@@ -2,6 +2,10 @@
 
 function generate_html_index() {
   INDEX_FILE=$1/index.html
+  if [ -f "$INDEX_FILE" ]; then
+    return
+  fi
+
   CONTENT='<html><head>
     <style type="text/css">
     html, body {

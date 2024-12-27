@@ -51,8 +51,9 @@ jobs:
       - name: Deploy created packages to gh-pages
         run: |
           git checkout gh-pages 
-          mkdir -p "resources/${{ env.BRANCH }}/targets" -p
+          mkdir -p "resources/${{ env.BRANCH }}/" -p
           cp -R buildout/* "resources/${{ env.BRANCH }}/"
+          rm -rf buildout
           git config user.name  github-actions
           git config user.email github-actions@github.com
           git add -A

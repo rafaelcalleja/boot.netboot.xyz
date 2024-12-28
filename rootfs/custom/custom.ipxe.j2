@@ -43,7 +43,7 @@ goto {{ value.version }}-boot
 
 :24.04-boot
 imgfree
-kernel ${kernel_url}vmlinuz ip=dhcp boot=live fetch=${squash_url}  {{ kernel_params }}
+kernel ${kernel_url}vmlinuz ip=dhcp boot=live httpfs=${squash_url}  {{ kernel_params }}
 initrd ${kernel_url}initrd
 boot
 

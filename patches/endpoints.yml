@@ -1,0 +1,10 @@
+  ubuntu-24.04-default-squash-custom:
+    path: /squash/releases/download/rafaelcalleja/distrostore/ubuntu-24.04/
+    files:
+      - filesystem.squashfs
+      - initrd
+      - vmlinuz
+    os: ubuntu-custom
+    version: '24.04'
+    flavor: GNOME
+    kernel: ubuntu-24.04-default-squash-custom

@@ -1,5 +1,7 @@
 #!ipxe
 
+isset ${custom_endpoint} || set custom_endpoint {{ custom_endpoint }}
+
 goto ${menu} ||
 
 :live_menu

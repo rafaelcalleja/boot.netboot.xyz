@@ -15,5 +15,3 @@
 
 ### Sets the local live endpoint for the users local installation
 #set live_endpoint http://my_ip_address:8080
-
-set custom_endpoint https://huggingface.co/auto-space/netbootLLM/resolve/main/data

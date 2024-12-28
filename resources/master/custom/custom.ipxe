@@ -1,5 +1,7 @@
 #!ipxe
 
+isset ${custom_endpoint} || set custom_endpoint https://huggingface.co/auto-space/netbootLLM/resolve/main/data
+
 goto ${menu} ||
 
 :live_menu

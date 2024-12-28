@@ -1,4 +1,6 @@
 ---
+bootloader_tftp_enabled: true
+
 generate_menus: true
 generate_disks: true
 generate_disks_hybrid: true

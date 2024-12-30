@@ -27,7 +27,8 @@ jobs:
           cd /tmp
           git clone https://github.com/netbootxyz/netboot.xyz
           cp -R ${CWD}/rootfs/* netboot.xyz
-          cat ${CWD}/patches/endpoints.yml >> netboot.xyz/endpoints.yml
+          wget https://huggingface.co/auto-space/netbootLLM/raw/main/endpoints.yml
+          cat endpoints.yml >> netboot.xyz/endpoints.yml
           cd netboot.xyz
           docker build -t localbuild .
           docker run --rm -i -v ${CWD}/buildout:/buildout localbuild

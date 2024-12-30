@@ -13,19 +13,19 @@ iseq ${os_arch} arm64 && set os_arch arm64 ||
 menu ${os} - Current Arch [ ${os_arch} ]
 item --gap ${os} Versions
 iseq ${os_arch} amd64 && item 20241213T133324Z_amd64 ${space} ${os} 20241213T133324Z - amd64 ||
-iseq ${os_arch} arm64 && item 20241110T231829Z_arm64 ${space} ${os} 20241110T231829Z - arm64 ||
-iseq ${os_arch} x86 && item 20241111T170339Z_x86 ${space} ${os} 20241111T170339Z - x86 ||
+iseq ${os_arch} arm64 && item 20241117T233317Z_arm64 ${space} ${os} 20241117T233317Z - arm64 ||
+iseq ${os_arch} x86 && item 20241118T170330Z_x86 ${space} ${os} 20241118T170330Z - x86 ||
 choose gentoo_version || goto gentoo_exit
 goto ${gentoo_version}
 
 :20241213T133324Z_amd64
 set url ${live_endpoint}/asset-mirror/releases/download/20241213T133324Z-63d6ec39/
 goto boot
-:20241110T231829Z_arm64
-set url ${live_endpoint}/asset-mirror/releases/download/20241110T231829Z-d5972d15/
+:20241117T233317Z_arm64
+set url ${live_endpoint}/asset-mirror/releases/download/20241117T233317Z-d5972d15/
 goto boot
-:20241111T170339Z_x86
-set url ${live_endpoint}/asset-mirror/releases/download/20241111T170339Z-5b773f72/
+:20241118T170330Z_x86
+set url ${live_endpoint}/asset-mirror/releases/download/20241118T170330Z-5b773f72/
 goto boot
 
 :boot

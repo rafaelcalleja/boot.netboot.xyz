@@ -15,7 +15,6 @@ item --gap ${os} Flavors
 goto ${live_version}
 
 :noble
-item ubuntu-24.04-default-squash-custom ${space} Ubuntu-Custom 24.04 Gnome
 goto flavor_select
 
 :flavor_select
@@ -23,10 +22,6 @@ choose flavor || goto live_menu
 echo ${cls}
 goto ${flavor} ||
 
-:ubuntu-24.04-default-squash-custom
-set squash_url ${custom_endpoint}/squash/releases/download/rafaelcalleja/distrostore/ubuntu-24.04/filesystem.squashfs
-set kernel_url ${custom_endpoint}/squash/releases/download/rafaelcalleja/distrostore/ubuntu-24.04/
-goto 24.04-boot
 
 :24.04-boot
 imgfree

@@ -14,7 +14,7 @@ choose version || goto exit
 goto ${version}
 
 :current-full
-set url ${live_endpoint}/asset-mirror/releases/download/46.1-c292230f/
+set url ${live_endpoint}/asset-mirror/releases/download/47.0-c292230f/
 goto boot
 
 :current-AntivirusLiveCD

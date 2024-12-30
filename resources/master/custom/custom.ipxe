@@ -24,8 +24,8 @@ echo ${cls}
 goto ${flavor} ||
 
 :ubuntu-24.04-GNOME-squash-custom
-set squash_url ${custom_endpoint}/squash/ubuntu/24.04/GNOMEfilesystem.squashfs
-set kernel_url ${custom_endpoint}/squash/ubuntu/24.04/GNOME
+set squash_url ${custom_endpoint}/squash/ubuntu/24.04/GNOME/filesystem.squashfs
+set kernel_url ${custom_endpoint}/squash/ubuntu/24.04/GNOME/
 goto 24.04-boot
 
 :24.04-boot

@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - master
+  repository_dispatch:
+    types:
+      - hf_model_update
   workflow_dispatch:
 
 jobs:

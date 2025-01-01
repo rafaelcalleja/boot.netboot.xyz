@@ -16,6 +16,7 @@ goto ${live_version}
 
 :noble
 item ubuntu-24.04-GNOME-squash-custom ${space} Ubuntu-Custom 24.04 Gnome
+item ubuntu-24.04-test-squash-custom ${space} Ubuntu-Custom 24.04 Test
 goto flavor_select
 
 :flavor_select
@@ -26,6 +27,10 @@ goto ${flavor} ||
 :ubuntu-24.04-GNOME-squash-custom
 set squash_url ${custom_endpoint}/squash/ubuntu/24.04/GNOME/filesystem.squashfs
 set kernel_url ${custom_endpoint}/squash/ubuntu/24.04/GNOME/
+goto 24.04-boot
+:ubuntu-24.04-test-squash-custom
+set squash_url ${custom_endpoint}/squash/ubuntu/24.04/test/filesystem.squashfs
+set kernel_url ${custom_endpoint}/squash/ubuntu/24.04/test/
 goto 24.04-boot
 
 :24.04-boot

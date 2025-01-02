@@ -11,8 +11,8 @@ choose live_version || goto live_exit
 goto ${live_version}
 
 :user
-set squash_url ${live_endpoint}/ubuntu-squash/releases/download/20241222-0745-9b372e2a/filesystem.squashfs
-set kernel_url ${live_endpoint}/ubuntu-squash/releases/download/20241222-0745-9b372e2a/
+set squash_url ${live_endpoint}/ubuntu-squash/releases/download/20241229-0747-9b372e2a/filesystem.squashfs
+set kernel_url ${live_endpoint}/ubuntu-squash/releases/download/20241229-0747-9b372e2a/
 goto user-boot
 
 :user-boot

@@ -26,7 +26,7 @@ set os Arch Linux
 clear arch_version
 menu ${os} - ${arch}
 item --gap Latest Releases
-item 2024.12.01 ${space} ${os} 2024.12.01
+item 2025.01.01 ${space} ${os} 2025.01.01
 choose arch_version || goto archlinux_exit
 iseq ${os_arch} amd64 && goto boot ||
 iseq ${os_arch} i686 && goto boot32 ||

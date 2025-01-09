@@ -15,7 +15,7 @@ goto vyos_boot
 
 :vyos_boot
 imgfree
-set url ${live_endpoint}/debian-squash/releases/download/1.5-rolling-202408160021-0956eeaa/
+set url ${live_endpoint}/debian-squash/releases/download/1.5-rolling-202501050641-0d0f700e/
 kernel ${url}vmlinuz boot=live components hostname=vyos username=live nopersistence noautologin union=overlay console=tty0 net.ifnames=0 biosdevname=0 fetch=${url}filesystem.squashfs initrd=initrd.magic ${cmdline}
 initrd ${url}initrd
 

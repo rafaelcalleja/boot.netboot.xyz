@@ -17,6 +17,7 @@ item rescuezilla ${space} Rescuezilla
 item shredos ${space} ShredOS
 item supergrubdisk ${space} Super Grub2 Disk
 item systemrescue ${space} System Rescue CD
+item uefishell ${space} UEFI Shell
 item zfsbootmenu ${space} ZFSBootMenu
 item --gap netboot.xyz tools:
 item cmdline ${space} Kernel cmdline params: [${cmdline}]
@@ -62,6 +63,11 @@ goto utils_exit
 :supergrubdisk
 imgfree
 kernel ${live_endpoint}/asset-mirror/releases/download/2.06s4-b7b838c6/supergrub2-classic-x86_64.efi
+boot
+goto utils_exit
+:uefishell
+imgfree
+kernel ${live_endpoint}/asset-mirror/releases/download/edk2-stable202002-046915a7/uefi-shell-x64.efi
 boot
 goto utils_exit
 :zfsbootmenu

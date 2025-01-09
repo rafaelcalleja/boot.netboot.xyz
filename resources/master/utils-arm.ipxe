@@ -2,6 +2,7 @@
 
 menu Utilities
 item --gap Utilities:
+item uefishell ${space} UEFI Shell
 item --gap netboot.xyz tools:
 item nbxyz ${space} netboot.xyz endpoints
 choose --default ${menu} menu || goto utils_exit
@@ -10,6 +11,11 @@ goto ${menu} ||
 chain ${menu}.ipxe || goto utils_exit
 goto utils_exit
 
+:uefishell
+imgfree
+kernel ${live_endpoint}/asset-mirror/releases/download/edk2-stable202002-046915a7/uefi-shell-aarch64.efi
+boot
+goto utils_exit
 
 
 :utils_exit

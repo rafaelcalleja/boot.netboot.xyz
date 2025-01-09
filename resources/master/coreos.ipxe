@@ -15,9 +15,9 @@ isset ${install_device} || set install_device /dev/sda
 isset ${ignition_url} || set ignition_url skip
 menu ${os} - ${os_arch}
 item --gap ${os}:
-item 41.20241122.3.0 ${space} ${os} stable
-item 41.20241215.2.0 ${space} ${os} testing
-item 41.20241215.1.0 ${space} ${os} next
+item 41.20241215.3.0 ${space} ${os} stable
+item 41.20250105.2.0 ${space} ${os} testing
+item 41.20250105.1.1 ${space} ${os} next
 item install_dev ${space} Set install device: ${install_device}
 item ignition_config ${space} Set ignition config url: ${ignition_url}
 choose --default ${core_version} core_version || goto coreos_exit
@@ -28,9 +28,9 @@ goto core_boot ||
 goto coreos_exit
 
 :core_boot
-iseq ${core_version} 41.20241122.3.0 && set coreos_channel stable ||
-iseq ${core_version} 41.20241215.2.0 && set coreos_channel testing ||
-iseq ${core_version} 41.20241215.1.0 && set coreos_channel next ||
+iseq ${core_version} 41.20241215.3.0 && set coreos_channel stable ||
+iseq ${core_version} 41.20250105.2.0 && set coreos_channel testing ||
+iseq ${core_version} 41.20250105.1.1 && set coreos_channel next ||
 set base_url ${coreos_mirror}/${coreos_base_dir}/${coreos_channel}/builds
 set build_version ${core_version}
 imgfree

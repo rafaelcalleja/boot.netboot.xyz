@@ -9,15 +9,13 @@ set os_arch ${arch}
 iseq ${os_arch} x86_64 && set os_arch amd64 ||
 iseq ${os_arch} i386 && set os_arch i386 ||
 menu ${os}
-item 7.4 ${space} ${os} 7.4
-item 7.3 ${space} ${os} 7.3
-item 7.2 ${space} ${os} 7.2
-item snapshots ${space} ${os} 7.4 Latest Snapshot
+item 7.6 ${space} ${os} 7.6
+item 7.5 ${space} ${os} 7.5
+item snapshots ${space} ${os} 7.6 Latest Snapshot
 choose ver || goto openbsd_exit
-iseq ${ver} 7.4 && set image_ver 74 ||
-iseq ${ver} 7.3 && set image_ver 73 ||
-iseq ${ver} 7.2 && set image_ver 72 ||
-iseq ${ver} snapshots && set image_ver 74 ||
+iseq ${ver} 7.6 && set image_ver 76 ||
+iseq ${ver} 7.5 && set image_ver 75 ||
+iseq ${ver} snapshots && set image_ver 76 ||
 goto boot_openbsd
 
 :boot_openbsd

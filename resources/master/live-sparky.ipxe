@@ -43,16 +43,16 @@ set squash_url ${live_endpoint}/debian-squash/releases/download/2024.12-db19bb55
 set kernel_url ${live_endpoint}/debian-squash/releases/download/2024.12-db19bb55/
 goto boot
 :sparky-stable-gui
-set squash_url ${live_endpoint}/debian-squash/releases/download/7.5-d38c17d0/filesystem.squashfs
-set kernel_url ${live_endpoint}/debian-squash/releases/download/7.5-d38c17d0/
+set squash_url ${live_endpoint}/debian-squash/releases/download/7.6-d38c17d0/filesystem.squashfs
+set kernel_url ${live_endpoint}/debian-squash/releases/download/7.6-d38c17d0/
 goto boot
 :sparky-stable-lxqt
-set squash_url ${live_endpoint}/debian-squash/releases/download/7.5-f9c9e1f1/filesystem.squashfs
-set kernel_url ${live_endpoint}/debian-squash/releases/download/7.5-f9c9e1f1/
+set squash_url ${live_endpoint}/debian-squash/releases/download/7.6-f9c9e1f1/filesystem.squashfs
+set kernel_url ${live_endpoint}/debian-squash/releases/download/7.6-f9c9e1f1/
 goto boot
 :sparky-stable-mingui
-set squash_url ${live_endpoint}/debian-squash/releases/download/7.5-6c87e83c/filesystem.squashfs
-set kernel_url ${live_endpoint}/debian-squash/releases/download/7.5-6c87e83c/
+set squash_url ${live_endpoint}/debian-squash/releases/download/7.6-6c87e83c/filesystem.squashfs
+set kernel_url ${live_endpoint}/debian-squash/releases/download/7.6-6c87e83c/
 goto boot
 
 :boot

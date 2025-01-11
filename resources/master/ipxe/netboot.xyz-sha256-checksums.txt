@@ -1,15 +1,15 @@
-# netboot.xyz bootloaders generated at Sat Jan 11 09:08:57 UTC 2025
+# netboot.xyz bootloaders generated at Sat Jan 11 10:34:14 UTC 2025
 # iPXE Commit: https://github.com/ipxe/ipxe/commit/d88eb0a1935942cdeccd3efee38f9765d2f1c235
 
 bc6305024b1a1d82f8448b5a6215309a85202d596dcafd78283f81b708daef34 *netboot.xyz-snp.efi
-7fc65795c3912d2a02da7dd804c3e2be0e3232b4afa1a13d21cb7d272a7d7dae *netboot.xyz-snp.efi.dsk
+78af4cdd7927212ad7eb6423b41d7d12d018608e3d42c123d92792bee29cac7a *netboot.xyz-snp.efi.dsk
 fb983f6e1f8cd5f462bb01c628fdfc14a8e4941c549bf407e5db9bdf9dc6236d *netboot.xyz-snponly.efi
 4fc5215d0ec6d15655f118a6fe77c58517e4b72b7229b33e4ab1984b43b05e04 *netboot.xyz-undionly.kpxe
 4cf075f522900b07e9104cb0a1b071cb449a38cdb87c6c352833c0f2519c1bb7 *netboot.xyz.dsk
 e9810cb4fb38588c772a5af1c1335cecfe9092b749b7830f6235027598028281 *netboot.xyz.efi
-845f97a8bca15f2ec81ebf1576bcbebe49431fb7e3aa733e226bd81d37d2ad3a *netboot.xyz.efi.dsk
-4cc968304495510c348cbe6766beac353655f54f274fe5fa782858406ac5a1eb *netboot.xyz.img
-aa250b93ebaa89e1cdb0d28018e486cbddabdc4a48d03c52efe23679d510d383 *netboot.xyz.iso
+a0c4fcea4fd412e4d6c18779e37026552cd8c31dec46820a9a560b15d1399b38 *netboot.xyz.efi.dsk
+2a45d585383c1dc8ba006b9e9d54164ca0a7c7c774c67f139670ca707e0fad5e *netboot.xyz.img
+b0c1edf4e884c526b2cae28515515539eda0b09665957cc47b6d865ae47ec01b *netboot.xyz.iso
 ce155f4bf077c06035a58979af7759c0f5f9e916e990f81ef878a50651b2f5b3 *netboot.xyz.kpxe
 a43b816760c5baedfed9ef3e0da3759f1378a01e4a89a5e7dc57c78ad419c754 *netboot.xyz.lkrn
 b61a75ef065c95e0ffd07c717d37f82e22edc4284c8c2a77b9af4066e3571f5b *netboot.xyz.pdsk

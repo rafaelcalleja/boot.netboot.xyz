@@ -12,6 +12,7 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+    if: github.event.client_payload.repository == 'auto-space/netbootLLM'
     permissions:
       id-token: write
       contents: write

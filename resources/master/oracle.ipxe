@@ -19,7 +19,7 @@ choose version || goto oracle_exit
 goto ${version}_${os_arch}
 
 :8_x86_64
-set url ${live_endpoint}/asset-mirror/releases/download/6-853a47d3/
+set url ${live_endpoint}/asset-mirror/releases/download/6-1525fd25/
 set repo https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/${os_arch}
 goto boot
 

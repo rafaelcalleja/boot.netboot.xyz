@@ -12,13 +12,13 @@ set os_arch ${arch}
 iseq ${os_arch} x86_64 && set os_arch amd64 ||
 menu ${os}
 item --gap ${os} Versions
-item tails_6.10 ${space} ${os} 6.10
+item tails_6.11 ${space} ${os} 6.11
 choose tails_version || goto tails_exit
 goto ${tails_version}
 
-:tails_6.10
-set kernel_url ${live_endpoint}/asset-mirror/releases/download/6.10-911e1aab/
-set iso_version 6.10
+:tails_6.11
+set kernel_url ${live_endpoint}/asset-mirror/releases/download/6.11-911e1aab/
+set iso_version 6.11
 goto boot
 
 :boot

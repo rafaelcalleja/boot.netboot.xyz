@@ -26,7 +26,7 @@ goto clonezilla-boot
 
 :ubuntu
 iseq ${os_arch} amd64 && item /ubuntu-squash/releases/download/20241010-oracular-48403403/ ${space} Clonezilla 20241010-Oracular Stable ||
-iseq ${os_arch} amd64 && item /ubuntu-squash/releases/download/20250106-plucky-c67d897c/ ${space} Clonezilla 20250106-Plucky Testing ||
+iseq ${os_arch} amd64 && item /ubuntu-squash/releases/download/20250114-plucky-c67d897c/ ${space} Clonezilla 20250114-Plucky Testing ||
 choose path || goto live_menu
 goto clonezilla-boot
 

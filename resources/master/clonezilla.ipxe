@@ -19,7 +19,7 @@ goto ${live_version}
 :debian
 iseq ${os_arch} i686 && item /debian-squash/releases/download/3.2.0-5-ef1ff756/ ${space} Clonezilla 3.2.0-5 Stable ||
 iseq ${os_arch} amd64 && item /debian-squash/releases/download/3.2.0-5-5641363c/ ${space} Clonezilla 3.2.0-5 Stable ||
-iseq ${os_arch} amd64 && item /debian-squash/releases/download/3.2.0-32-9e73bfe5/ ${space} Clonezilla 3.2.0-32 Testing ||
+iseq ${os_arch} amd64 && item /debian-squash/releases/download/3.2.0-33-9e73bfe5/ ${space} Clonezilla 3.2.0-33 Testing ||
 iseq ${os_arch} i686 && item /debian-squash/releases/download/3.2.0-3-d1702a7a/ ${space} Clonezilla 3.2.0-3 Testing ||
 choose path || goto live_menu
 goto clonezilla-boot

@@ -9,7 +9,7 @@ item almalinux ${space} AlmaLinux
 item alpinelinux ${space} Alpine Linux
 item archlinux ${space} Arch Linux
 item blackarch ${space} BlackArch
-item centos ${space} CentOS
+item centos ${space} CentOS Stream
 item debian ${space} Debian
 item devuan ${space} Devuan
 item fedora ${space} Fedora

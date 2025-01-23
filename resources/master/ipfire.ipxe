@@ -9,7 +9,7 @@ goto ${menu} ||
 clear osversion
 set os IPFire
 menu ${os}
-item 2.29-core190 ${space} ${os} 2.29 Core190
+item 2.29-core191 ${space} ${os} 2.29 Core191
 isset ${osversion} || choose osversion || goto linux_menu
 echo ${cls}
 set dir ${ipfire_base_dir}/${osversion}/images/x86_64

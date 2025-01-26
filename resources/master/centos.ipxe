@@ -19,7 +19,7 @@ item 10-stream ${space} ${os} 10.0 Stream
 item 9-stream ${space} ${os} 9.0 Stream
 isset ${osversion} || choose osversion || goto linux_menu
 echo ${cls}
-set dir ${osversion}/BaseOS/${os_arch}/os ||
+set dir ${centos_base_dir}/${osversion}/BaseOS/${os_arch}/os ||
 set repo ${centos_mirror}/${dir}
 goto boottype
 

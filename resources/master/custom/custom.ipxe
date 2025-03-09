@@ -15,6 +15,7 @@ item --gap ${os} Flavors
 goto ${live_version}
 
 :noble
+item ubuntu-24.04-GCLONE-squash-custom ${space} Ubuntu-Custom 24.04 Gclone
 item ubuntu-24.04-GLIVE-squash-custom ${space} Ubuntu-Custom 24.04 Glive
 item ubuntu-24.04-GNOME-squash-custom ${space} Ubuntu-Custom 24.04 Gnome
 item ubuntu-24.04-test-squash-custom ${space} Ubuntu-Custom 24.04 Test
@@ -25,6 +26,10 @@ choose flavor || goto live_menu
 echo ${cls}
 goto ${flavor} ||
 
+:ubuntu-24.04-GCLONE-squash-custom
+set squash_url ${custom_endpoint}/squash/ubuntu/24.04/GCLONE/filesystem.squashfs
+set kernel_url ${custom_endpoint}/squash/ubuntu/24.04/GCLONE/
+goto 24.04-boot
 :ubuntu-24.04-GLIVE-squash-custom
 set squash_url ${custom_endpoint}/squash/ubuntu/24.04/GLIVE/filesystem.squashfs
 set kernel_url ${custom_endpoint}/squash/ubuntu/24.04/GLIVE/

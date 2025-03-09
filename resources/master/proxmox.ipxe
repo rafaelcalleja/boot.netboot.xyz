@@ -15,9 +15,9 @@ item pbs-normal ${space} ${os} Backup Server 3.3-1
 item pbs-text ${space} ${os} Backup Server 3.3-1 (Text)
 item pbs-debug ${space} ${os} Backup Server 3.3-1 (Debug)
 item --gap ${os} Mail Gateway
-item pmg-normal ${space} ${os} Mail Gateway 8.1-1
-item pmg-text ${space} ${os} Mail Gateway 8.1-1 (Text)
-item pmg-debug ${space} ${os} Mail Gateway 8.1-1 (Debug)
+item pmg-normal ${space} ${os} Mail Gateway 8.2-1
+item pmg-text ${space} ${os} Mail Gateway 8.2-1 (Text)
+item pmg-debug ${space} ${os} Mail Gateway 8.2-1 (Debug)
 item --gap ${os} VE
 item pve-normal ${space} ${os} VE 8.3-1
 item pve-text ${space} ${os} VE 8.3-1 (Text)
@@ -71,8 +71,8 @@ initrd ${kernel_url}proxmox.iso /proxmox.iso
 boot
 
 :boot-pmg
-set kernel_url ${live_endpoint}/asset-mirror/releases/download/8.1-1-8374c64d/
-set proxmox_version 8.1-1
+set kernel_url ${live_endpoint}/asset-mirror/releases/download/8.2-1-8374c64d/
+set proxmox_version 8.2-1
 imgfree
 kernel ${kernel_url}vmlinuz vga=791 video=vesafb:ywrap,mtrr ramdisk_size=16777216 rw quiet ${params} initrd=initrd.magic ${cmdline}
 initrd ${kernel_url}initrd

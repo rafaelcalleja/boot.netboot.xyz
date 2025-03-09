@@ -19,6 +19,7 @@ item gentoo ${space} Gentoo
 item harvester ${space} Harvester
 item ipfire ${space} IPFire
 item k3os ${space} k3OS
+item kairos ${space} Kairos
 item kali ${space} Kali Linux
 item mageia ${space} Mageia
 item nixos ${space} NixOS

@@ -12,8 +12,8 @@ goto ${live_version}
 
 
 :stable
-set squash_url ${live_endpoint}/debian-squash/releases/download/1.6.0-10-cff72999/filesystem.squashfs
-set kernel_url ${live_endpoint}/debian-squash/releases/download/1.6.0-10-cff72999/
+set squash_url ${live_endpoint}/debian-squash/releases/download/1.7.0-1-cff72999/filesystem.squashfs
+set kernel_url ${live_endpoint}/debian-squash/releases/download/1.7.0-1-cff72999/
 goto boot
 
 

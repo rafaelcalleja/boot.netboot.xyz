@@ -19,14 +19,14 @@ goto ${live_version}
 :debian
 iseq ${os_arch} i686 && item /debian-squash/releases/download/3.2.0-5-ef1ff756/ ${space} Clonezilla 3.2.0-5 Stable ||
 iseq ${os_arch} amd64 && item /debian-squash/releases/download/3.2.0-5-5641363c/ ${space} Clonezilla 3.2.0-5 Stable ||
-iseq ${os_arch} amd64 && item /debian-squash/releases/download/3.2.0-33-9e73bfe5/ ${space} Clonezilla 3.2.0-33 Testing ||
+iseq ${os_arch} amd64 && item /debian-squash/releases/download/3.2.1-9-9e73bfe5/ ${space} Clonezilla 3.2.1-9 Testing ||
 iseq ${os_arch} i686 && item /debian-squash/releases/download/3.2.0-3-d1702a7a/ ${space} Clonezilla 3.2.0-3 Testing ||
 choose path || goto live_menu
 goto clonezilla-boot
 
 :ubuntu
 iseq ${os_arch} amd64 && item /ubuntu-squash/releases/download/20241010-oracular-48403403/ ${space} Clonezilla 20241010-Oracular Stable ||
-iseq ${os_arch} amd64 && item /ubuntu-squash/releases/download/20250114-plucky-c67d897c/ ${space} Clonezilla 20250114-Plucky Testing ||
+iseq ${os_arch} amd64 && item /ubuntu-squash/releases/download/20250303-plucky-c67d897c/ ${space} Clonezilla 20250303-Plucky Testing ||
 choose path || goto live_menu
 goto clonezilla-boot
 

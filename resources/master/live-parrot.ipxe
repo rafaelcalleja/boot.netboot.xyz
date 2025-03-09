@@ -6,20 +6,20 @@ goto ${menu} ||
 set os Parrot OS
 menu ${os}
 item --gap ${os} Versions
-item 6.2-home ${space} ${os} 6.2 home
-item 6.2-security ${space} ${os} 6.2 security
+item 6.3.2-home ${space} ${os} 6.3.2 home
+item 6.3.2-security ${space} ${os} 6.3.2 security
 choose live_version || goto live_exit
 goto ${live_version}
 
 
-:6.2-home
-set squash_url ${live_endpoint}/debian-squash/releases/download/6.2-897b335c/filesystem.squashfs
-set kernel_url ${live_endpoint}/debian-squash/releases/download/6.2-897b335c/
+:6.3.2-home
+set squash_url ${live_endpoint}/debian-squash/releases/download/6.3.2-37ae0f27/filesystem.squashfs
+set kernel_url ${live_endpoint}/debian-squash/releases/download/6.3.2-37ae0f27/
 goto boot
 
-:6.2-security
-set squash_url ${live_endpoint}/debian-squash/releases/download/6.2-6288c350/filesystem.squashfs
-set kernel_url ${live_endpoint}/debian-squash/releases/download/6.2-6288c350/
+:6.3.2-security
+set squash_url ${live_endpoint}/debian-squash/releases/download/6.3.2-999ed7ad/filesystem.squashfs
+set kernel_url ${live_endpoint}/debian-squash/releases/download/6.3.2-999ed7ad/
 goto boot
 
 

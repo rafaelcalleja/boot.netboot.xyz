@@ -18,7 +18,7 @@ set url ${live_endpoint}/asset-mirror/releases/download/47.0-c292230f/
 goto boot
 
 :current-AntivirusLiveCD
-set url ${live_endpoint}/asset-mirror/releases/download/47.0-1.4.1-43b0f75b/
+set url ${live_endpoint}/asset-mirror/releases/download/48.0-1.4.2-43b0f75b/
 goto boot
 
 :current-BakAndImg

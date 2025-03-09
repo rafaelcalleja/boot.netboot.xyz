@@ -114,14 +114,14 @@ set codename jammy
 set version_number 22.04.5
 goto sub_boot
 :noble_amd64
-set kernel_url ${live_endpoint}/ubuntu-squash/releases/download/24.04.1-dac09526/
+set kernel_url ${live_endpoint}/ubuntu-squash/releases/download/24.04.2-dac09526/
 set codename noble
-set version_number 24.04.1
+set version_number 24.04.2
 goto sub_boot
 :noble_arm64
-set kernel_url ${live_endpoint}/ubuntu-squash/releases/download/24.04.1-7b71a472/
+set kernel_url ${live_endpoint}/ubuntu-squash/releases/download/24.04.2-7b71a472/
 set codename noble
-set version_number 24.04.1
+set version_number 24.04.2
 goto sub_boot
 :oracular_amd64
 set kernel_url ${live_endpoint}/ubuntu-squash/releases/download/24.10-fcf8807c/

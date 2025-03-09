@@ -20,8 +20,8 @@ clear menu
 clear shredos_version
 iseq ${os_arch} i686 && set kernel_url ${live_endpoint}/asset-mirror/releases/download/0.34_32-bit_20221231-3adcc4d0/shredos ||
 set shredos_version 0.34_32-bit_20221231
-iseq ${os_arch} x86_64 && set kernel_url ${live_endpoint}/asset-mirror/releases/download/2024.02.2_26.0_x86-64_0.37-bd59ed1f/shredos ||
-set shredos_version 2024.02.2_26.0_x86-64_0.37
+iseq ${os_arch} x86_64 && set kernel_url ${live_endpoint}/asset-mirror/releases/download/2024.11_27_x86-64_0.38-fa89876c/shredos ||
+set shredos_version 2024.11_27_x86-64_0.38
 menu ShredOS ${shredos_version}
 item --gap Choose a wipe method:
 item dodshort ${space} Wipe all disks with the short DoD 5220.22-M method

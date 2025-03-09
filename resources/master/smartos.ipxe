@@ -18,10 +18,10 @@ goto smartos_menu
 set os SmartOS
 menu ${os}
 item --gap Platform Images:
-item 20250124T134639Z ${space} ${os} 20250124T134639Z
-item 20250123T000246Z ${space} ${os} 20250123T000246Z
-item 20250109T000743Z ${space} ${os} 20250109T000743Z
-item 20241226T000807Z ${space} ${os} 20241226T000807Z
+item 20250306T000316Z ${space} ${os} 20250306T000316Z
+item 20250220T074131Z ${space} ${os} 20250220T074131Z
+item 20250220T000340Z ${space} ${os} 20250220T000340Z
+item 20250206T001102Z ${space} ${os} 20250206T001102Z
 item --gap Options:
 item toggle_pool ${space} Rescue mode: ${noimport}
 item toggle_kmdb_e ${space} Load Kernel Debugger: ${kmdb_e}

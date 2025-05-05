@@ -13,8 +13,6 @@ item --gap ${os} Flavors
 goto ${live_version}
 
 :current
-item /ubuntu-squash/releases/download/2023.01-2aadd48c/ ${space} Feren 2023.01
-item /ubuntu-squash/releases/download/12-2019-b43afc5c/ ${space} Feren Classic
 choose path || goto live_menu
 goto feren-boot
 

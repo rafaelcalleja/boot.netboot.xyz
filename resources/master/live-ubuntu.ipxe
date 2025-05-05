@@ -95,8 +95,8 @@ set squash_url ${live_endpoint}/ubuntu-squash/releases/download/22.04.5-14797330
 set kernel_url ${live_endpoint}/ubuntu-squash/releases/download/22.04.5-14797330/
 goto 22.04-boot
 :ubuntu-24.04-default-squash
-set squash_url ${live_endpoint}/ubuntu-squash/releases/download/24.04.2-03d79d20/filesystem.squashfs
-set kernel_url ${live_endpoint}/ubuntu-squash/releases/download/24.04.2-03d79d20/
+set squash_url ${live_endpoint}/ubuntu-squash/releases/download/24.04.2-8efa196d/filesystem.squashfs
+set kernel_url ${live_endpoint}/ubuntu-squash/releases/download/24.04.2-8efa196d/
 goto 24.04-boot
 
 :20.04-boot

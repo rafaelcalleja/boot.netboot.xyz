@@ -6,12 +6,12 @@
 :rescuezilla
 set os Rescuezilla
 menu ${os} Live CD
-item rescuezilla_2.5.1 ${space} ${os} 2.5.1
+item rescuezilla_2.6 ${space} ${os} 2.6
 choose rescuezilla_version || goto rescuezilla_exit
 goto ${rescuezilla_version}
 
-:rescuezilla_2.5.1
-set kernel_url ${live_endpoint}/asset-mirror/releases/download/2.5.1-2ace42ce/
+:rescuezilla_2.6
+set kernel_url ${live_endpoint}/asset-mirror/releases/download/2.6-2ace42ce/
 imgfree
 kernel ${kernel_url}vmlinuz ip=dhcp boot=casper netboot=url url=${kernel_url}filesystem.squashfs initrd=initrd.magic ${cmdline}
 initrd ${kernel_url}initrd

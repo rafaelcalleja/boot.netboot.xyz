@@ -6,14 +6,14 @@ goto ${menu} ||
 set os Zorin Live
 menu ${os}
 item --gap ${os} Versions
-item 17.2 ${space} ${os} 17.2
+item 17.3 ${space} ${os} 17.3
 choose live_version || goto live_exit
 menu ${os} ${live_version}
 item --gap ${os} Flavors
 goto ${live_version}
 
-:17.2
-item zorin-core-squash ${space} Zorin 17.2 Core
+:17.3
+item zorin-core-squash ${space} Zorin 17.3 Core
 goto flavor_select
 
 :flavor_select
@@ -22,8 +22,8 @@ echo ${cls}
 goto ${flavor} ||
 
 :zorin-core-squash
-set squash_url ${live_endpoint}/ubuntu-squash/releases/download/17.2-a87e018b/filesystem.squashfs
-set kernel_url ${live_endpoint}/ubuntu-squash/releases/download/17.2-a87e018b/
+set squash_url ${live_endpoint}/ubuntu-squash/releases/download/17.3-a87e018b/filesystem.squashfs
+set kernel_url ${live_endpoint}/ubuntu-squash/releases/download/17.3-a87e018b/
 goto boot
 
 :boot

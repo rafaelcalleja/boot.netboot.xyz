@@ -31,28 +31,28 @@ echo ${cls}
 goto ${flavor} ||
 
 :sparky-rolling-gui
-set squash_url ${live_endpoint}/debian-squash/releases/download/2024.12-66a56f08/filesystem.squashfs
-set kernel_url ${live_endpoint}/debian-squash/releases/download/2024.12-66a56f08/
+set squash_url ${live_endpoint}/debian-squash/releases/download/2025.03-66a56f08/filesystem.squashfs
+set kernel_url ${live_endpoint}/debian-squash/releases/download/2025.03-66a56f08/
 goto boot
 :sparky-rolling-lxqt
-set squash_url ${live_endpoint}/debian-squash/releases/download/2024.12-2b965fd7/filesystem.squashfs
-set kernel_url ${live_endpoint}/debian-squash/releases/download/2024.12-2b965fd7/
+set squash_url ${live_endpoint}/debian-squash/releases/download/2025.03-2b965fd7/filesystem.squashfs
+set kernel_url ${live_endpoint}/debian-squash/releases/download/2025.03-2b965fd7/
 goto boot
 :sparky-rolling-mingui
-set squash_url ${live_endpoint}/debian-squash/releases/download/2024.12-db19bb55/filesystem.squashfs
-set kernel_url ${live_endpoint}/debian-squash/releases/download/2024.12-db19bb55/
+set squash_url ${live_endpoint}/debian-squash/releases/download/2025.03-db19bb55/filesystem.squashfs
+set kernel_url ${live_endpoint}/debian-squash/releases/download/2025.03-db19bb55/
 goto boot
 :sparky-stable-gui
-set squash_url ${live_endpoint}/debian-squash/releases/download/7.6-d38c17d0/filesystem.squashfs
-set kernel_url ${live_endpoint}/debian-squash/releases/download/7.6-d38c17d0/
+set squash_url ${live_endpoint}/debian-squash/releases/download/7.7-d38c17d0/filesystem.squashfs
+set kernel_url ${live_endpoint}/debian-squash/releases/download/7.7-d38c17d0/
 goto boot
 :sparky-stable-lxqt
-set squash_url ${live_endpoint}/debian-squash/releases/download/7.6-f9c9e1f1/filesystem.squashfs
-set kernel_url ${live_endpoint}/debian-squash/releases/download/7.6-f9c9e1f1/
+set squash_url ${live_endpoint}/debian-squash/releases/download/7.7-f9c9e1f1/filesystem.squashfs
+set kernel_url ${live_endpoint}/debian-squash/releases/download/7.7-f9c9e1f1/
 goto boot
 :sparky-stable-mingui
-set squash_url ${live_endpoint}/debian-squash/releases/download/7.6-6c87e83c/filesystem.squashfs
-set kernel_url ${live_endpoint}/debian-squash/releases/download/7.6-6c87e83c/
+set squash_url ${live_endpoint}/debian-squash/releases/download/7.7-6c87e83c/filesystem.squashfs
+set kernel_url ${live_endpoint}/debian-squash/releases/download/7.7-6c87e83c/
 goto boot
 
 :boot

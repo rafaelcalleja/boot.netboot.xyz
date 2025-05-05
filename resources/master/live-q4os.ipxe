@@ -6,17 +6,17 @@ goto ${menu} ||
 set os Q4OS Live
 menu ${os}
 item --gap ${os} Versions
-item 5.7 ${space} ${os} 5.7
-item 5.7 ${space} ${os} 5.7
+item 5.8 ${space} ${os} 5.8
+item 5.8 ${space} ${os} 5.8
 choose live_version || goto live_exit
 menu ${os} ${live_version}
 item --gap ${os} Flavors
 goto ${live_version}
 
-:5.7
-item q4os-default-squash ${space} Q4os 5.7 Trinity
-:5.7
-item q4os-plasma-squash ${space} Q4os 5.7 Plasma
+:5.8
+item q4os-default-squash ${space} Q4os 5.8 Trinity
+:5.8
+item q4os-plasma-squash ${space} Q4os 5.8 Plasma
 goto flavor_select
 
 :flavor_select
@@ -25,12 +25,12 @@ echo ${cls}
 goto ${flavor} ||
 
 :q4os-default-squash
-set squash_url ${live_endpoint}/debian-squash/releases/download/5.7-d1a34866/filesystem.squashfs
-set kernel_url ${live_endpoint}/debian-squash/releases/download/5.7-d1a34866/
+set squash_url ${live_endpoint}/debian-squash/releases/download/5.8-d1a34866/filesystem.squashfs
+set kernel_url ${live_endpoint}/debian-squash/releases/download/5.8-d1a34866/
 goto q4os-boot
 :q4os-plasma-squash
-set squash_url ${live_endpoint}/debian-squash/releases/download/5.7-3af797cd/filesystem.squashfs
-set kernel_url ${live_endpoint}/debian-squash/releases/download/5.7-d1a34866/
+set squash_url ${live_endpoint}/debian-squash/releases/download/5.8-3af797cd/filesystem.squashfs
+set kernel_url ${live_endpoint}/debian-squash/releases/download/5.8-d1a34866/
 goto q4os-boot
 
 :q4os-boot

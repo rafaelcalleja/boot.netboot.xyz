@@ -12,7 +12,7 @@ set os_arch ${arch}
 iseq ${os_arch} x86_64 && set os_arch amd64 ||
 menu ${os} - ${os_arch}
 item --gap Harvester:
-item harvester_url ${space} Begin install of Harvester ${os} v1.4.1
+item harvester_url ${space} Begin install of Harvester ${os} v1.5.0
 item --gap Parameters:
 item harvester_config_url ${space} Set config-create or config-join.yaml URL: ${harvester_config_url}
 choose --default ${menu} menu || goto harvester_exit
@@ -26,7 +26,7 @@ clear menu
 goto harvester
 
 :harvester_url
-set harvester_url ${live_endpoint}/asset-mirror/releases/download/v1.4.1-c82c6d22/
+set harvester_url ${live_endpoint}/asset-mirror/releases/download/v1.5.0-c82c6d22/
 goto harvester_boot
 
 :harvester_boot

@@ -6,7 +6,7 @@
 :freebsd_menu
 set os FreeBSD
 menu ${os}
-item /asset-mirror/releases/download/14.1-a5094acd/ ${space} ${os} 14
+item /asset-mirror/releases/download/14.2-a5094acd/ ${space} ${os} 14
 choose ver || goto freebsd_exit
 goto type_select
 

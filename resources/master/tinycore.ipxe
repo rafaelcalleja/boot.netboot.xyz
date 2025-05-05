@@ -47,12 +47,12 @@ choose version || goto tinycore_exit
 goto ${version}
 
 :core
-set kernel_url ${tinycore_mirror}/15.x/x86/release/distribution_files/vmlinuz
-set initrd_url ${tinycore_mirror}/15.x/x86/release/distribution_files/core.gz
+set kernel_url ${tinycore_mirror}/16.x/x86/release/distribution_files/vmlinuz
+set initrd_url ${tinycore_mirror}/16.x/x86/release/distribution_files/core.gz
 goto boot
 :corepure
-set kernel_url ${tinycore_mirror}/15.x/x86_64/release/distribution_files/vmlinuz64
-set initrd_url ${tinycore_mirror}/15.x/x86_64/release/distribution_files/corepure64.gz
+set kernel_url ${tinycore_mirror}/16.x/x86_64/release/distribution_files/vmlinuz64
+set initrd_url ${tinycore_mirror}/16.x/x86_64/release/distribution_files/corepure64.gz
 goto boot
 :dcorebionic
 set kernel_url ${tinycore_mirror}/dCore/x86/release/dCore-bionic/vmlinuz-bionic

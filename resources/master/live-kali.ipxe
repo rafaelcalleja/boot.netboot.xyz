@@ -6,13 +6,13 @@ goto ${menu} ||
 set os Kali Linux
 menu ${os}
 item --gap ${os} Versions
-item kali-xfce-squash ${space} ${os} 2025.1
+item kali-xfce-squash ${space} ${os} 2025.1c
 choose live_version || goto live_exit
 goto ${live_version}
 
 :kali-xfce-squash
-set squash_url ${live_endpoint}/debian-squash/releases/download/2025.1-8e024a88/filesystem.squashfs
-set kernel_url ${live_endpoint}/debian-squash/releases/download/2025.1-8e024a88/
+set squash_url ${live_endpoint}/debian-squash/releases/download/2025.1c-8e024a88/filesystem.squashfs
+set kernel_url ${live_endpoint}/debian-squash/releases/download/2025.1c-8e024a88/
 set params components
 goto boot
 

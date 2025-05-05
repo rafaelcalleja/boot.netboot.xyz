@@ -20,8 +20,8 @@ iseq ${os_arch} arm64 && set os_arch aarch64 ||
 
 menu ${os} - ${os_arch}
 item --gap Latest Releases
+item 42 ${space} ${os} 42
 item 41 ${space} ${os} 41
-item 40 ${space} ${os} 40
 iseq ${os_arch} x86_64 && item rawhide ${space} ${os} rawhide ||
 isset ${osversion} || choose osversion || goto linux_menu
 set ova ${os} ${osversion}
@@ -32,6 +32,7 @@ menu ${os} ${os_arch} sku type
 item Everything ${ova} Everything
 item Server ${ova} Server
 item Kinoite ${ova} Kinoite
+item Onyx ${ova} Onyx
 item Silverblue ${ova} Silverblue 
 item Sericea ${ova} Sericea
 isset ${sku_type} || choose sku_type || goto fedora

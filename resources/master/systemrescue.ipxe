@@ -12,14 +12,14 @@ iseq ${os_arch} i386 && set os_arch i686 ||
 menu ${os}
 set ipparam BOOTIF=${netX/mac} ip=dhcp net.ifnames=0
 item --gap ${os} Versions
-iseq ${os_arch} amd64 && item 11.03_${os_arch} ${space} ${os} 11.03 ||
+iseq ${os_arch} amd64 && item 12.0_${os_arch} ${space} ${os} 12.0 ||
 iseq ${os_arch} i686 && item 9.03_${os_arch} ${space} ${os} 9.03 ||
 item rootpass_mac Enable rootpass=${rootpass} [IP:${ip}] [ enabled: ${rootpass_enabled} ]
 choose live_version || goto live_exit
 goto ${live_version}
 
-:11.03_amd64
-set url ${live_endpoint}/asset-mirror/releases/download/11.03-e17908dd/
+:12.0_amd64
+set url ${live_endpoint}/asset-mirror/releases/download/12.00-e17908dd/
 goto boot
 
 :9.03_i686

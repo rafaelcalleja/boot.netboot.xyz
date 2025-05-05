@@ -16,8 +16,6 @@ clear older_release
 menu ${os} - ${os_arch}
 item --gap Latest Releases
 item bookworm ${space} ${os} 12.0 (bookworm)
-item bullseye ${space} ${os} 11.0 (bullseye)
-item buster ${space} ${os} 10.0 (buster)
 item --gap Testing Releases
 item trixie ${space} ${os} trixie (testing)
 item sid ${space} ${os} sid (unstable)
